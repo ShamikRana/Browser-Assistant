@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RAG Page Assistant</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+    <h3>Web Page Assistant</h3>
+
+    <label for="question">Question</label>
+    <textarea id="question" placeholder="Type your question here."></textarea>
+
+    <div class="controls">
+      <button id="askBtn">Ask</button>
+      <button id="startHelpBtn" title="Instructions to start local server">Start server?</button>
+    </div>
+
+    <div id="status" class="status">Server: <span id="serverState">unknown</span></div>
+
+    <label for="answer">Answer</label>
+    <textarea id="answer" readonly placeholder="Answer will appear here..."></textarea>
+
+    <div class="footer">
+      <small>Note: run backend first (see Start server?).</small>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

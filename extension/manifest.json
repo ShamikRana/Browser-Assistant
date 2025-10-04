@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Web Assistant",
+  "version": "1.0",
+  "description": "Web Assistant to answer your queries regarding content in web page.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "640": "icons/icon.png"
+    }
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "http://localhost:5000/*"
+  ],
+  "icons": {
+    "640": "icons/icon.png"
+  }
+}
