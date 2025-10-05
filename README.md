@@ -84,4 +84,5 @@ Browser Assistant is designed to let you ask questions about the content of any 
 2. Enable Developer mode.
 3. Click **Load unpacked** and select the `extension/` folder.
 4. Open any page, click the extension icon, type a question, and press **Ask**.
+![Extension](https://raw.githubusercontent.com/ShamikRana/Browser-Assistant/refs/heads/main/extension/icons/image.png)
 5. The extension expects the backend at `http://localhost:5000`. If your server runs on a different host/port, update `manifest.json` `host_permissions` and `popup.js` accordingly.
