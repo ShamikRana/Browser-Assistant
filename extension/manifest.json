@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Web Assistant",
+  "name": "Browser Assistant",
   "version": "1.0",
   "description": "Web Assistant to answer your queries regarding content in web page.",
   "action": {
