@@ -411,11 +411,11 @@ All settings are environment variables read by `backend/config.py`.
 |---|---|---|
 | `DEVICE` | `auto` | `auto`, `cpu` or `gpu` |
 | `HOST` / `PORT` | `127.0.0.1` / `5000` | Bind address |
-| `TOP_K` | `5` | Chunks retrieved per question |
-| `CHUNK_SIZE` / `CHUNK_OVERLAP` | `900` / `150` | Chunking granularity |
-| `MAX_CONTEXT_CHARS` | `6000` | Context budget; lower is faster |
-| `MAX_NEW_TOKENS` | `320` | Answer length cap |
-| `FULL_CONTEXT_THRESHOLD` | `4000` | Pages shorter than this skip retrieval |
+| `TOP_K` | `7` | Chunks retrieved per question |
+| `CHUNK_SIZE` / `CHUNK_OVERLAP` | `1000` / `100` | Chunking granularity |
+| `MAX_CONTEXT_CHARS` | `20000` | Context budget; lower is faster |
+| `MAX_NEW_TOKENS` | `256` | Answer length cap |
+| `FULL_CONTEXT_THRESHOLD` | `10000` | Pages shorter than this skip retrieval |
 | `INDEX_CACHE_SIZE` | `8` | Pages kept indexed in memory |
 
 ## CPU vs GPU
