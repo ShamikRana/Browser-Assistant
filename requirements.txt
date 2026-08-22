@@ -1,0 +1,37 @@
+# ---------------------------------------------------------------------------
+# Web service
+# ---------------------------------------------------------------------------
+fastapi>=0.115
+uvicorn>=0.30
+requests>=2.32
+
+# ---------------------------------------------------------------------------
+# Page extraction cascade (trafilatura -> readability -> BeautifulSoup)
+# ---------------------------------------------------------------------------
+trafilatura>=2.0
+readability-lxml>=0.8.1
+beautifulsoup4>=4.12
+lxml>=5.2
+lxml_html_clean>=0.4
+
+# ---------------------------------------------------------------------------
+# Hybrid retrieval: dense embeddings + BM25, fused with reciprocal rank fusion.
+# Similarity search uses NumPy directly, so no vector store is required.
+# ---------------------------------------------------------------------------
+sentence-transformers>=3.0
+rank-bm25>=0.2.2
+numpy>=1.26
+huggingface-hub>=0.24
+torch>=2.6
+
+# Embeddings use CPU by default. For GPU embeddings, install a CUDA-enabled
+# PyTorch build after this file, using the command documented in README.md.
+
+# ---------------------------------------------------------------------------
+# ONNX Runtime GenAI - install ONE of the following depending on your hardware
+# ---------------------------------------------------------------------------
+onnxruntime-genai>=0.4
+# For NVIDIA GPU inference, install this instead of onnxruntime-genai:
+# onnxruntime-genai-cuda>=0.4
+# Also install its CUDA dependencies with:
+# pip install "onnxruntime-gpu[cuda,cudnn]"

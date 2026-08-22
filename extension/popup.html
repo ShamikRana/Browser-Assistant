@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Browser Assistant (Phi-4)</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="brand">
+      <span class="logo">φ</span>
+      <div>
+        <h1>Browser Assistant</h1>
+        <p class="subtitle">Phi-4 mini &middot; running locally</p>
+      </div>
+    </div>
+    <div id="statusPill" class="pill pill--idle" title="Backend status">
+      <span class="dot"></span><span id="statusText">checking</span>
+    </div>
+  </header>
+
+  <main class="main">
+    <p id="pageTitle" class="page-title" title="Current page">&nbsp;</p>
+
+    <div class="chips" id="chips">
+      <button class="chip" data-prompt="Summarize this page in 5 bullet points.">Summarize</button>
+      <button class="chip" data-prompt="What are the key takeaways?">Key points</button>
+      <button class="chip" data-prompt="Explain this page in simple terms.">Explain simply</button>
+    </div>
+
+    <div class="field">
+      <textarea id="question" rows="3"
+        placeholder="Ask anything about this page…  (Ctrl+Enter to send)"></textarea>
+    </div>
+
+    <div class="controls">
+      <button id="askBtn" class="btn btn--primary">
+        <span class="btn-label">Ask</span>
+        <span class="spinner" hidden></span>
+      </button>
+      <button id="stopBtn" class="btn btn--ghost" hidden>Stop</button>
+      <button id="copyBtn" class="btn btn--ghost" hidden title="Copy answer">Copy</button>
+    </div>
+
+    <section class="answer-wrap">
+      <div id="answer" class="answer answer--empty">
+        Answers appear here. The page you're viewing is read locally &mdash; nothing is sent to the cloud.
+      </div>
+    </section>
+
+    <p id="meta" class="meta"></p>
+  </main>
+
+  <footer class="footer">
+    <button id="helpBtn" class="link">Server not running?</button>
+    <span id="deviceBadge" class="device"></span>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>

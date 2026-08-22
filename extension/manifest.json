@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Browser Assistant (Phi-4)",
+  "version": "2.0",
+  "description": "Ask questions about the page you're reading, answered locally by Phi-4 mini.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "640": "icons/icon.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "activeTab",
+    "alarms",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "http://localhost:5000/*",
+    "http://127.0.0.1:5000/*"
+  ],
+  "icons": {
+    "640": "icons/icon.png"
+  }
+}
