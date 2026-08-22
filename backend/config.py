@@ -57,14 +57,14 @@ HOST = _env("HOST", "127.0.0.1")
 PORT = _env_int("PORT", 5000)
 
 # Retrieval / generation budgets. Lower values mean faster answers.
-CHUNK_SIZE = _env_int("CHUNK_SIZE", 900)
-CHUNK_OVERLAP = _env_int("CHUNK_OVERLAP", 150)
-TOP_K = _env_int("TOP_K", 5)
-MAX_CONTEXT_CHARS = _env_int("MAX_CONTEXT_CHARS", 6000)
-MAX_NEW_TOKENS = _env_int("MAX_NEW_TOKENS", 320)
+CHUNK_SIZE = _env_int("CHUNK_SIZE", 1000)
+CHUNK_OVERLAP = _env_int("CHUNK_OVERLAP", 100)
+TOP_K = _env_int("TOP_K", 7)
+MAX_CONTEXT_CHARS = _env_int("MAX_CONTEXT_CHARS", 20000)
+MAX_NEW_TOKENS = _env_int("MAX_NEW_TOKENS", 256)
 
 # Pages shorter than this skip retrieval entirely and are passed in full.
-FULL_CONTEXT_THRESHOLD = _env_int("FULL_CONTEXT_THRESHOLD", 4000)
+FULL_CONTEXT_THRESHOLD = _env_int("FULL_CONTEXT_THRESHOLD", 10000)
 
 # Number of page indexes kept in memory (keyed by content hash).
 INDEX_CACHE_SIZE = _env_int("INDEX_CACHE_SIZE", 8)
