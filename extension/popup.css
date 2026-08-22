@@ -47,14 +47,9 @@ body {
 .brand { display: flex; align-items: center; gap: 10px; }
 
 .logo {
-  display: grid;
-  place-items: center;
   width: 32px; height: 32px;
   border-radius: 9px;
-  background: linear-gradient(135deg, var(--accent), #9333ea);
-  color: #fff;
-  font-size: 17px;
-  font-weight: 700;
+  object-fit: cover;
 }
 
 .header h1 { margin: 0; font-size: 14px; font-weight: 600; }
