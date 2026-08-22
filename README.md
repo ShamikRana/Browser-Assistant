@@ -5,9 +5,6 @@ reading. A Chrome/Edge extension captures the page, and a local **Phi-4 mini**
 ONNX model generates the answer. Inference runs entirely on your machine, on
 **CPU or GPU**.
 
-This is a Phi-4 based rebuild of [Browser-Assistant](https://github.com/ShamikRana/Browser-Assistant),
-which used Phi-3.5-mini.
-
 ## Preview
 
 ![Browser Assistant extension popup](extension/icons/image.png)
