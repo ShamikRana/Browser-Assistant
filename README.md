@@ -1,4 +1,4 @@
-# Browser Assistant (Phi-4)
+# Browser Assistant
 
 A local, private RAG assistant that answers questions about the web page you're
 reading. A Chrome/Edge extension captures the page, and a local **Phi-4 mini**
